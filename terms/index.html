@@ -170,6 +170,7 @@
   
   </head>
 
+
   <body><nav class="navbar navbar-expand-xl navbar-light bg-light py-4">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="https://autorecovery247.co.uk/">
@@ -603,5 +604,54 @@
   </div>
   </div>
 </footer>
-</body>
+
+
+<a class="whatsapp-widget" aria-label="Chat on WhatsApp" href="https://wa.me/447934241211" target="_blank">
+  
+  <img class="" src="https://autorecovery247.co.uk/images/whatsapp.png" alt="/images/whatsapp.png" width="378" height="80">
+
+
+</a>
+
+
+<style>
+   
+  .whatsapp-widget {
+      position: fixed;
+      bottom: 20px;  
+      right: 20px;   
+      z-index: 1000;  
+      text-decoration: none;
+  }
+  
+  .whatsapp-widget img {
+      width: 180px;  
+      height: 50px;  
+      border-radius: 20%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;  
+  }
+  
+  .whatsapp-widget img:hover {
+      transform: scale(1.1);  
+  }
+  
+   
+  @media screen and (max-width: 768px) {
+      .whatsapp-widget img {
+        width: 180px;  
+      height: 50px;  
+      }
+  }
+  </style>
+  
+  
+  <script>
+    document.addEventListener('scroll', function () {
+        const widget = document.querySelector('.whatsapp-widget');
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        widget.style.display = scrollTop > 200 ? 'block' : 'none'; 
+    });
+  </script>
+  </body>
 </html>
